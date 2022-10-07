@@ -184,4 +184,4 @@ Herhangi bir branchteki commiti üstünde çalıştığınız branche almaya yar
 git cherry-pick <commit hash>
 ```
 
-sadece bu metni almak istiyorum.
+Cherry pick ile bu metni main branchine almak istiyorum.
