@@ -182,4 +182,6 @@ git rebase IP-1234
 Herhangi bir branchteki commiti üstünde çalıştığınız branche almaya yarar.
 ```bash
 git cherry-pick <commit hash>
+# Eğer commit oluşmasın sadece dosyadaki değişiklikler alınsın istiyorsak.
+git cherry-pick <commit hash> -n
 ```
