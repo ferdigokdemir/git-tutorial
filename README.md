@@ -107,6 +107,8 @@ Branchler arasında geçiş yapmaya yarar.
 git checkout <branch adı>
 # varolan branchin bir kopyasını oluşturur ve yeni branche geçiş yapar.
 git checkout -b <branch adı>
+# bir dosyadaki değişikliği geri alır. git reset ile aynı işleve sahiptir.
+git checkout -- test.html
 
 ```
 
@@ -173,6 +175,12 @@ git show <commit hash>
 ```
 
 ## git rm
+Herhangi bir dosyayı siler ve remote repoda silmek için commit oluşturur.
+```bash
+git rm test.html
+```
+
+## git restore
 Herhangi bir dosyayı siler ve remote repoda silmek için commit oluşturur.
 ```bash
 git rm test.html
