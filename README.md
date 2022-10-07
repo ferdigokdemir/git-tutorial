@@ -256,6 +256,14 @@ Bir repo içine başka bir repoyu gömebiliriz.
 git submodule add https://github.com/facebook/react
 ```
 
+## git alias
+Kısayollar tanımlamak için kullanılır.
+```
+git config --global alias.ch checkout
+# Artık aşağıdaki gibi checkout komutunu kullanarabiliriz.
+git ch
+```
+
 ## .gitignore
 Bu dosya ile git'e gönderilmeyecek dosya veya klasörleri belirleyebiliriz.
 Örnek: [https://github.com/facebook/react/blob/main/.gitignore](https://github.com/facebook/react/blob/main/.gitignore)
