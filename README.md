@@ -1,5 +1,14 @@
 # Git Öğreniyorum
 
+## SSH Key
+Uzak git repolarına ulaşabilmek için şifre yerine key kullanmak önemli bir güvenlik yöntemidir.
+```bash
+# Aşağıdaki komut ile bir ssh key oluşturabiliriz. Bu key'i git providerımıza eklememiz gerekir.
+ssh-keygen
+# Aşağıdaki komut ile oluşturduğumuz keyin içeriğini görebiliriz.
+cat ~/.ssh/id_rsa.pub
+```
+
 ## README.md dosyası
 Bu dosya ilgili projeye ait açıklamaları, notları vb. yazdığınız dosyadır. Markdown dosya formatına sahiptir.
 
@@ -231,6 +240,12 @@ git diff develop master
 Herhangi bir dosya veya klasörün adını değiştirir.
 ```bash
 git mv eski.html yeni.html
+```
+
+## git submodule
+Bir repo içine başka bir repoyu gömebiliriz.
+```bash
+git submodule add https://github.com/facebook/react
 ```
 
 ## .gitignore
