@@ -1,5 +1,8 @@
 # Git Öğreniyorum
 
+## README.md dosyası
+Bu dosya ilgili projeye ait açıklamaları, notları vb. yazdığınız dosyadır. Markdown dosya formatına sahiptir.
+
 ## git config
 
 Git'i ilk kurduğunuzda bu komut ile commit gönderecek kullanıcıyı ayarlayabilirsiniz.
@@ -49,6 +52,8 @@ Yapılan değişiklikleri local repoya eklemeye yarar. Push metodu ile bu deği�
 ```bash
 git commit -m "feature: add masterpass"
 # commit mesajlarında emir kiplerinin kullanılması çok faydalıdır. Yani eklendi, değiştirdi, silindi vb.
+# Eğer pushlanmamış commitimizin mesajında değişklik yapmak istiyorsak bu komut kullanılır.
+git commit --amend -m "add logo"
 
 ```
 <i>Örnek commit mesajları için popüler react kütüphanesi incelenebilir.</i>
@@ -178,6 +183,16 @@ git rebase IP-1234
 <img src="assets/img/merge-vs-rebase.png">
           
 
+## git revert
+Herhangi bir commite geri dönmeye yarar ve bu değişiklik için yeni bir commit oluşturur.
+```bash
+git revert <commit hash>
+
+# Eğer commit history tamamen silip istenilen commite dönüşmek isteniyorsa revert yerine reset kullanılabilir. Sakıncalı bir yöntemdir. Değişiklikleriniz kaybolur.
+git reset --hard <commit hash>
+git push --force
+```
+
 ## git cherry-pick 
 Herhangi bir branchteki commiti üstünde çalıştığınız branche almaya yarar.
 ```bash
@@ -208,4 +223,16 @@ git tag v1.0.0
 Dosyadaki değişklikleri karşılaştırır.
 ```bash
 git diff README.md
+# İki farklı branchi karşılaştırmak için
+git diff develop master
 ```
+
+## git mv
+Herhangi bir dosya veya klasörün adını değiştirir.
+```bash
+git mv eski.html yeni.html
+```
+
+## .gitignore
+Bu dosya ile git'e gönderilmeyecek dosya veya klasörleri belirleyebiliriz.
+Örnek: [https://github.com/facebook/react/blob/main/.gitignore](https://github.com/facebook/react/blob/main/.gitignore)
