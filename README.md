@@ -264,6 +264,6 @@ git config --global alias.ch checkout
 git ch
 ```
 
-## .gitignore main branchte değişiklik yaptım
+## .gitignore
 Bu dosya ile git'e gönderilmeyecek dosya veya klasörleri belirleyebiliriz.
 Örnek: [https://github.com/facebook/react/blob/main/.gitignore](https://github.com/facebook/react/blob/main/.gitignore)
