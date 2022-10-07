@@ -185,3 +185,27 @@ git cherry-pick <commit hash>
 # Eğer commit oluşmasın sadece dosyadaki değişiklikler alınsın istiyorsak.
 git cherry-pick <commit hash> -n
 ```
+
+## git archive 
+Bir veya daha fazla dosyayı sıkıştırıp zip dosyası oluşturur.
+```bash
+git archive --format zip HEAD > archive-HEAD.zip
+```
+
+## git blame
+Herhangi bir dosya üzerinde yapılan değişiklikleri gösterir. Git history değildir!. File history'dir.
+```bash
+git blame <dosya>
+```
+
+## git tag
+Proje versiyonlamaya yarar. Git tag ile versiyon yarattığınızda o versiyondaki kodları artık değiştiremezsiniz. Tabi --force metodu vardır değiştirmek için ama önerilmez. Yeni bir versiyon çıkmanız daha doğru olur.
+```bash
+git tag v1.0.0
+```
+
+## git diff
+Dosyadaki değişklikleri karşılaştırır.
+```bash
+git diff README.md
+```
