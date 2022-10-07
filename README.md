@@ -183,3 +183,5 @@ Herhangi bir branchteki commiti üstünde çalıştığınız branche almaya yar
 ```bash
 git cherry-pick <commit hash>
 ```
+
+sadece bu metni almak istiyorum.
